@@ -82,20 +82,20 @@ def overlay_transparent(background, overlay, x, y, alpha_master=1.0):
 
 # --- ASSET LOADING ---
 fruit_assets = {}
-img_bomb = load_asset('bomb.png', scale=0.8)
-img_explosion = load_asset('explosion.png', scale=1.0)
-img_ice = load_asset('ice_bottle.png', scale=0.8)
-img_blitz = load_asset('colored_bomb.png', scale=0.8)
-img_gold = load_asset('golden_pineapple.png', scale=0.8)
+img_bomb = load_asset('assets/bomb.png', scale=0.8)
+img_explosion = load_asset('assets/explosion.png', scale=1.0)
+img_ice = load_asset('assets/ice_bottle.png', scale=0.8)
+img_blitz = load_asset('assets/colored_bomb.png', scale=0.8)
+img_gold = load_asset('assets/golden_pineapple.png', scale=0.8)
 
 for fruit in FRUIT_LIST:
-    raw_half_1 = load_asset(f'{fruit}_half_1.png', scale=0.8)
-    raw_half_2 = load_asset(f'{fruit}_half_2.png', scale=0.8)
+    raw_half_1 = load_asset(f'assets/{fruit}_half_1.png', scale=0.8)
+    raw_half_2 = load_asset(f'assets/{fruit}_half_2.png', scale=0.8)
     fruit_assets[fruit] = {
-        'whole': load_asset(f'{fruit}.png', scale=0.8),
+        'whole': load_asset(f'assets/{fruit}.png', scale=0.8),
         'half_1': dim_image(raw_half_1, factor=0.6),
         'half_2': dim_image(raw_half_2, factor=0.6),
-        'splash': load_asset(f'{fruit}_splash.png', scale=0.8)
+        'splash': load_asset(f'assets/{fruit}_splash.png', scale=0.8)
     }
 
 # --- 3. CLASS DEFINITIONS ---
