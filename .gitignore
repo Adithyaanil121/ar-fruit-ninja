@@ -16,14 +16,6 @@ Thumbs.db
 .vscode/
 .idea/
 
-# OpenCV / temp files
-*.log
-
-# Backup / stray files
+# Backup / temp files
 *~
 *.bak
-
-# Media / generated outputs (if any)
-output/
-screenshots/
-
