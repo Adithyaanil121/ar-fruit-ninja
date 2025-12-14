@@ -1,21 +1,31 @@
 # Python
 __pycache__/
-*.py[cod]
+*.pyc
 *.pyo
-
-# Virtual environments
+*.pyd
+*.egg-info/
+.env
 venv/
-.env/
-.env.*
+.venv/
 
-# OS files
+# OS
 .DS_Store
 Thumbs.db
 
-# IDEs / editors
+# IDE
 .vscode/
 .idea/
 
-# Backup / temp files
-*~
-*.bak
+# Media / generated files
+*.mp4
+*.avi
+*.gif
+*.log
+
+# Model / cache files
+*.pt
+*.onnx
+*.npy
+
+# Experimental / local configs
+local_config.py
