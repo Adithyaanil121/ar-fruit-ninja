@@ -10,4 +10,3 @@ Experimental networking work (if any) is isolated in `networking_wip/` and is
 not required to run the game.
 
 
-Main Contributor: Aaron Alex Mathew (@RYuK006)
